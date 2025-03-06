@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.blogPost {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.blogPost h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.postInfo {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.postContent {
+    margin-bottom: 20px;
+}
+.postContent p{
+    width: 100%; /*Så att kommentaren inte kan bli längre än boxen*/
+}
+
+.postActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.postActionsLeft, .postActionsRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.likes span {
+    margin-left: 5px;
+}
+
+.newPost {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.newPost h2 {
+    margin-bottom: 15px;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formGroup input, .formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.formGroup textarea {
+    min-height: 150px;
+}
+#imagePreview {
+    display: none; 
+    max-width:100%; 
+    margin-top:10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.deleteButton {
+    background-color: #f8f8f8;
+    color: #666;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.deleteButton:hover {
+    background-color: #ff4757;
+    color: white;
+    border-color: #ff4757;
+}
+.fileInput {
+    display: none; /* Verkar ej gå att styla ett input image element ordentligt. Gömmer den och gör labeln klickbar istället, */
+  }
+.uploadButton {
+    background-color: #f8f8f8;
+    color: black;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.uploadButton:hover {
+    background-color: #3557c6;
+    color: white;
+}
+
+.commentsSection {
+    display: none; /* Så att kommentarena är avtogglade från start*/
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.commentsSection h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    border-left: 3px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.commentInfo {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.commentForm {
+    margin-top: 15px;
+}
+
+.commentForm textarea {
+    min-height: 80px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.commentInput {
+    padding: 7px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #333;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.buttonTemplate {
+    background-color: #4a6ee0;
+}
+
+.buttonTemplate:hover {
+    background-color: #3557c6;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    header {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}

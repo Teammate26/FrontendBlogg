@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superbloggen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Superbloggen</h1>
+        <p>Jesper Sjöberg KVALIT24</p>
+    </header>   
+    <div class="container">
+        <div class="newPost">
+            <h2>Create New Post</h2>
+            <form id="postForm">
+                <div class="formGroup">
+                    <label for="postTitle">Title</label>
+                    <input type="text" id="postTitle" required>
+                </div>
+                <div class="formGroup">
+                    <label for="postContent">Content</label>
+                    <textarea id="postContent" required></textarea>
+                </div>
+                <div class="formGroup">
+                    <label for="imageUpload" class="uploadButton">Upload Image</label>
+                    <input type="file" id="imageUpload" class="fileInput" accept="image/*">
+                    <img id="imagePreview">
+                </div>
+                <button type="submit" id="publishButton" class="buttonTemplate">Publish Post</button>
+            </form>
+        </div>
+        
+        <div id="blogPosts">
+            <div class="blogPost"> <!--Två hårdkodade posts-->
+                <h2>Hur fungerar OLED?</h2>
+                <div class="postInfo">
+                    <span class="postDate">February 25, 2025</span>
+                    <span class="postAuthor">By Admin</span>
+                </div>
+                <div class="postContent">
+                    <img src="bilder/oled.jpg" style="max-width:100%; margin-top:10px;">
+                </div>
+                <div class="postContent">
+                    <p>OLED (Organic Light Emitting Diode) är en skärmteknik där varje pixel lyser av sig själv utan behov av bakgrundsbelysning. Detta gör det möjligt att skapa skärmar med djup svärta, hög kontrast och levande färger. OLED-paneler används i allt från TV-apparater och smartphones till smartklockor och bärbara datorer. Tekniken har fördelen av snabb responstid och energieffektivitet vid visning av mörka bilder, men kan vara känslig för inbränning vid statiska bilder. En vidareutveckling av OLED är AMOLED och MicroLED, som erbjuder ännu bättre prestanda och hållbarhet.</p>
+                </div>
+                <div class="postActions">
+                    <div class="postActionsLeft">
+                        <div class="likes" dataLikes="1336"> ❤️ <span>1336</span>&nbsp;likes
+                        </div>
+                        <button class="commentToggle">Comments</button>
+                    </div>
+                    <div class="postActionsRight">
+                        <button class="deleteButton">Delete</button>
+                    </div>
+                </div>
+                <div class="commentsSection">
+                    <h3>Comments (1)</h3>
+                    <div class="comment">
+                        <div class="commentInfo">Posted by Guest on February 26, 2025</div>
+                        <div class="commentContent">I have both OLED TV and OLED monitor. I love it!</div>
+                    </div>
+                    <div class="commentForm">
+                        <textarea placeholder="Write a comment..." class="commentInput"></textarea>
+                        <button class="submitComment buttonTemplate">Submit Comment</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blogPost">
+                <h2>NVIDIA RTX 5090</h2>
+                <div class="postInfo">
+                    <span class="postDate">February 26, 2025</span>
+                    <span class="postAuthor">By Admin</span>
+                </div>
+                <div class="postContent">
+                    <img src="bilder/rtx5090.jpg" style="max-width:100%; margin-top:10px;">
+                </div>
+                <div class="postContent">
+                    <p>NVIDIA GeForce RTX 5090 är företagets mest kraftfulla grafikkort hittills, lanserat den 30 januari 2025. Det bygger på den nya Blackwell-arkitekturen och är utrustat med 21 760 CUDA-kärnor samt 32 GB GDDR7-minne med en 512-bitars minnesbuss, vilket ger en imponerande minnesbandbredd på 1 790 GB/s.                       
+                        En av de mest framstående funktionerna är introduktionen av DLSS 4 med Multi Frame Generation, som använder AI för att generera flera bildrutor per renderad ram, vilket kan ge upp till åtta gånger högre bildfrekvens i vissa spel.
+                        RTX 5090 har också förbättrade strålspårningskärnor och femte generationens Tensor-kärnor, vilket resulterar i upp till 30 % bättre ray tracing-prestanda jämfört med föregående generation. 
+                        </p>
+                </div>
+                <div class="postActions">
+                    <div class="postActionsLeft">
+                        <div class="likes" dataLikes="95">❤️<span>95</span>&nbsp;likes
+                        </div>
+                        <button class="commentToggle">Comments</button>
+                    </div>
+                    <div class="postActionsRight">
+                        <button class="deleteButton">Delete</button>
+                    </div>
+                </div>
+                <div class="commentsSection">
+                    <h3>Comments (1)</h3>
+                    <div class="comment">
+                        <div class="commentInfo">Posted by Guest on February 27, 2025</div>
+                        <div class="commentContent">If it was just possible to buy one...</div>
+                    </div>
+                    <div class="commentForm">
+                        <textarea placeholder="Write a comment..." class="commentInput"></textarea>
+                        <button class="submitComment buttonTemplate">Submit Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Superbloggen by Jesper Sjöberg. All rights reserved.</p>
+    </footer>
+</body>
+</html>
